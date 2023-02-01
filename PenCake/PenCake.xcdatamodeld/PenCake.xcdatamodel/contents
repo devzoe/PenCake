@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Diary" representedClassName="Diary" syncable="YES" codeGenerationType="class">
+        <attribute name="mainTitle" optional="YES" attributeType="String"/>
+        <attribute name="secondTitle" optional="YES" attributeType="String"/>
+        <relationship name="hasMemo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Memo" inverseName="isHadInDiary" inverseEntity="Memo"/>
+    </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="Memo" representedClassName="Memo" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="String"/>
+        <attribute name="shortCreatedAt" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="hasPhoto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="isHadInMemo" inverseEntity="Photo"/>
+        <relationship name="isHadInDiary" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Diary" inverseName="hasMemo" inverseEntity="Diary"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES" codeGenerationType="class">
+        <attribute name="photoId" optional="YES" attributeType="String"/>
+        <relationship name="isHadInMemo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Memo" inverseName="hasPhoto" inverseEntity="Memo"/>
+    </entity>
 </model>

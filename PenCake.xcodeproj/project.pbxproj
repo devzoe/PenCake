@@ -7,22 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F37C86C2989140F00A2C83D /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F37C86B2989140F00A2C83D /* Memo.swift */; };
+		2F37C86E2989FDF200A2C83D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F37C86D2989FDF200A2C83D /* Color.swift */; };
+		2F37C874298A036600A2C83D /* SourceHanSerifK-VF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F37C873298A036600A2C83D /* SourceHanSerifK-VF.ttf */; };
+		2F37C877298A045100A2C83D /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F37C876298A045100A2C83D /* Font.swift */; };
+		2F37C879298A076800A2C83D /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F37C878298A076800A2C83D /* Text.swift */; };
+		2F37C87B298A0FDD00A2C83D /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F37C87A298A0FDD00A2C83D /* BackButton.swift */; };
+		2F37C87D298A531C00A2C83D /* CreateMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F37C87C298A531C00A2C83D /* CreateMemoView.swift */; };
 		2FFBF5C6298180CF005F8D50 /* PenCakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF5C5298180CF005F8D50 /* PenCakeApp.swift */; };
-		2FFBF5C8298180CF005F8D50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF5C7298180CF005F8D50 /* ContentView.swift */; };
+		2FFBF5C8298180CF005F8D50 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF5C7298180CF005F8D50 /* MainView.swift */; };
 		2FFBF5CA298180D1005F8D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFBF5C9298180D1005F8D50 /* Assets.xcassets */; };
 		2FFBF5CD298180D1005F8D50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFBF5CC298180D1005F8D50 /* Preview Assets.xcassets */; };
 		2FFBF5CF298180D1005F8D50 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF5CE298180D1005F8D50 /* Persistence.swift */; };
 		2FFBF5D2298180D1005F8D50 /* PenCake.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF5D0298180D1005F8D50 /* PenCake.xcdatamodeld */; };
+		2FFBF617298252F4005F8D50 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF616298252F4005F8D50 /* ListView.swift */; };
+		2FFBF61929825D64005F8D50 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF61829825D64005F8D50 /* MemoView.swift */; };
+		2FFBF61B29860345005F8D50 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF61A29860345005F8D50 /* PhotoPicker.swift */; };
+		2FFBF61D29864535005F8D50 /* UpdateMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF61C29864535005F8D50 /* UpdateMemoView.swift */; };
+		2FFBF61F2986470D005F8D50 /* UpdateDiaryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBF61E2986470D005F8D50 /* UpdateDiaryTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F37C86B2989140F00A2C83D /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		2F37C86D2989FDF200A2C83D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2F37C873298A036600A2C83D /* SourceHanSerifK-VF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSerifK-VF.ttf"; sourceTree = "<group>"; };
+		2F37C875298A03E600A2C83D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2F37C876298A045100A2C83D /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		2F37C878298A076800A2C83D /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		2F37C87A298A0FDD00A2C83D /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		2F37C87C298A531C00A2C83D /* CreateMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoView.swift; sourceTree = "<group>"; };
 		2FFBF5C2298180CF005F8D50 /* PenCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFBF5C5298180CF005F8D50 /* PenCakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenCakeApp.swift; sourceTree = "<group>"; };
-		2FFBF5C7298180CF005F8D50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2FFBF5C7298180CF005F8D50 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2FFBF5C9298180D1005F8D50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FFBF5CC298180D1005F8D50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FFBF5CE298180D1005F8D50 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2FFBF5D1298180D1005F8D50 /* PenCake.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PenCake.xcdatamodel; sourceTree = "<group>"; };
+		2FFBF616298252F4005F8D50 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		2FFBF61829825D64005F8D50 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		2FFBF61A29860345005F8D50 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		2FFBF61C29864535005F8D50 /* UpdateMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMemoView.swift; sourceTree = "<group>"; };
+		2FFBF61E2986470D005F8D50 /* UpdateDiaryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDiaryTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F37C86F298A013500A2C83D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2F37C87A298A0FDD00A2C83D /* BackButton.swift */,
+				2F37C870298A014800A2C83D /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2F37C870298A014800A2C83D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F37C86D2989FDF200A2C83D /* Color.swift */,
+				2F37C876298A045100A2C83D /* Font.swift */,
+				2F37C878298A076800A2C83D /* Text.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F37C871298A016A00A2C83D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2F37C872298A017B00A2C83D /* Font */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2F37C872298A017B00A2C83D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2F37C873298A036600A2C83D /* SourceHanSerifK-VF.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		2FFBF5B9298180CF005F8D50 = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +115,18 @@
 		2FFBF5C4298180CF005F8D50 /* PenCake */ = {
 			isa = PBXGroup;
 			children = (
+				2F37C875298A03E600A2C83D /* Info.plist */,
+				2F37C871298A016A00A2C83D /* Configuration */,
+				2F37C86F298A013500A2C83D /* Util */,
 				2FFBF5C5298180CF005F8D50 /* PenCakeApp.swift */,
-				2FFBF5C7298180CF005F8D50 /* ContentView.swift */,
+				2F37C86B2989140F00A2C83D /* Memo.swift */,
+				2FFBF5C7298180CF005F8D50 /* MainView.swift */,
+				2FFBF61829825D64005F8D50 /* MemoView.swift */,
+				2FFBF61E2986470D005F8D50 /* UpdateDiaryTitleView.swift */,
+				2FFBF61C29864535005F8D50 /* UpdateMemoView.swift */,
+				2F37C87C298A531C00A2C83D /* CreateMemoView.swift */,
+				2FFBF61A29860345005F8D50 /* PhotoPicker.swift */,
+				2FFBF616298252F4005F8D50 /* ListView.swift */,
 				2FFBF5C9298180D1005F8D50 /* Assets.xcassets */,
 				2FFBF5CE298180D1005F8D50 /* Persistence.swift */,
 				2FFBF5D0298180D1005F8D50 /* PenCake.xcdatamodeld */,
@@ -132,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FFBF5CD298180D1005F8D50 /* Preview Assets.xcassets in Resources */,
+				2F37C874298A036600A2C83D /* SourceHanSerifK-VF.ttf in Resources */,
 				2FFBF5CA298180D1005F8D50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,9 +215,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FFBF5CF298180D1005F8D50 /* Persistence.swift in Sources */,
-				2FFBF5C8298180CF005F8D50 /* ContentView.swift in Sources */,
+				2FFBF5C8298180CF005F8D50 /* MainView.swift in Sources */,
+				2F37C86E2989FDF200A2C83D /* Color.swift in Sources */,
+				2FFBF617298252F4005F8D50 /* ListView.swift in Sources */,
+				2FFBF61F2986470D005F8D50 /* UpdateDiaryTitleView.swift in Sources */,
+				2FFBF61D29864535005F8D50 /* UpdateMemoView.swift in Sources */,
+				2FFBF61B29860345005F8D50 /* PhotoPicker.swift in Sources */,
 				2FFBF5C6298180CF005F8D50 /* PenCakeApp.swift in Sources */,
+				2F37C879298A076800A2C83D /* Text.swift in Sources */,
+				2F37C87D298A531C00A2C83D /* CreateMemoView.swift in Sources */,
+				2F37C877298A045100A2C83D /* Font.swift in Sources */,
+				2FFBF61929825D64005F8D50 /* MemoView.swift in Sources */,
 				2FFBF5D2298180D1005F8D50 /* PenCake.xcdatamodeld in Sources */,
+				2F37C87B298A0FDD00A2C83D /* BackButton.swift in Sources */,
+				2F37C86C2989140F00A2C83D /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +357,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PenCake/Preview Content\"";
+				DEVELOPMENT_TEAM = 6B2F2JB38S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PenCake/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,8 +388,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PenCake/Preview Content\"";
+				DEVELOPMENT_TEAM = 6B2F2JB38S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PenCake/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

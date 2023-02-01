@@ -7,13 +7,15 @@
 
 import SwiftUI
 
+
+// 첫 화면
 @main
 struct PenCakeApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
