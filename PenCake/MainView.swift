@@ -9,7 +9,6 @@ import SwiftUI
 import CoreData
 
 struct MainView: View {
-    @Environment(\.managedObjectContext) private var viewContext
     @State private var isPresented = false
     var body: some View {
         NavigationView {
@@ -38,18 +37,16 @@ struct MainView: View {
 }
 
 struct ListItem : View {
-    // 데이터 요청
-    @FetchRequest(entity: Memo.entity(),
+    var memoViewModel : MemoViewModel = MemoViewModel()
+    @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Memo.timestamp, ascending: false)],
         animation: .default)
-    // 데이터 결과
-    private var memos: FetchedResults<Memo>
-    
+    var memoList: FetchedResults<Memo>
     var body: some View {
         // header로 넣어주기
         Section(header: ListHeader()) {
             List {
-                ForEach(memos) { memo in
+                ForEach(memoList) { memo in
                     ZStack {
                         NavigationLink {
                             MemoView(memo: memo)

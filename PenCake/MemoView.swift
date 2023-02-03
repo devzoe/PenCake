@@ -8,9 +8,9 @@ import SwiftUI
 import PhotosUI
 
 struct MemoView: View {
+    var memoViewModel : MemoViewModel = MemoViewModel()
     @Environment(\.managedObjectContext) private var managedObjectContext
     @Environment(\.dismiss) private var dismiss
-    var memoViewModel : MemoViewModel = MemoViewModel()
     
     @State var memo : FetchedResults<Memo>.Element
     @State var text = "memo"
@@ -113,7 +113,9 @@ struct MemoView: View {
                             }
                             Button("취소", role: .cancel) {}
                         }
-                        .fullScreenCover(isPresented: $isMemoUpdateShowing, content: UpdateMemoView.init)
+                        .fullScreenCover(isPresented: $isMemoUpdateShowing){
+                            UpdateMemoView(memo: memo)
+                        }
                     }.padding()
                 }
             }

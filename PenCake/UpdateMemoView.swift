@@ -10,17 +10,24 @@ import SwiftUI
 
 struct UpdateMemoView : View {
     @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var memo: Memo
+    @State private var title : String
+    @State private var content : String
+   
+    init(memo: Memo) {
+        self.memo = memo
+        
+        self._title = State(initialValue: memo.title!)
+        self._content = State(initialValue: memo.content!)
 
-    @State private var text = "메모 업데이트"
-    //@Binding var title : String
-    //@Binding var content : String
+    }
     var body: some View {
         NavigationView {
             VStack {
-                TextField("제목", text: $text)
+                TextField("제목", text: $title)
                     .font(.pencakeFont(.regular))
                     .padding()
-                TextField("내용을 입력하세요", text: $text)
+                TextField("내용을 입력하세요", text: $content)
                     .font(.pencakeFont(.regular))
                     .padding()
                 Spacer()
@@ -33,6 +40,13 @@ struct UpdateMemoView : View {
             }, trailing: Text("완료")
                 .font(.pencakeFont(.regular))
                 .foregroundColor(.pencakeBlue)
+                .onTapGesture {
+                    let memo = self.memo
+                    memo.title = self.title
+                    memo.content = self.content
+                    presentationMode.wrappedValue.dismiss()
+                    
+                }
             )
         }
         
@@ -40,9 +54,10 @@ struct UpdateMemoView : View {
 }
 
 
+
 struct UpdateMemoView_Previews: PreviewProvider {
     static var previews: some View {
-        UpdateMemoView()
+        UpdateMemoView(memo: Memo())
     }
 }
 
